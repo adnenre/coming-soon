@@ -1,9 +1,9 @@
 # coming-soon
 
-<div >
- <img src="https://github.com/adnenre/coming-soon/blob/master/img/l.png"></div>
+<p align="center">
+ <img src="https://github.com/adnenre/coming-soon/blob/master/img/l.png">
 ready coming soon template
-
+</p>
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-11.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-22.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-33.png)
