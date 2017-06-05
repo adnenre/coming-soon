@@ -24,6 +24,6 @@ Ready coming soon template
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-3.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-4.png)
 
-[a link] demo (file:///C:/Users/versus/Desktop/themeforest%20final%20version/demo/index.html)
+[a link](https:///C:/Users/versus/Desktop/themeforest%20final%20version/demo/index.html)
 
 
