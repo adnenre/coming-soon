@@ -6,6 +6,10 @@ Ready coming soon template
 - Gradient background
 - Image background
 - Slideshow background
+- Responsive
+- Particle
+- cross browser(Chrome,firefox,internet explorer 10+)
+
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-11.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-22.png)
