@@ -1,6 +1,7 @@
 # coming-soon
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/l.png)
+
 ready coming soon template
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-11.png)
