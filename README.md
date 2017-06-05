@@ -1,7 +1,7 @@
 # coming-soon
 ![alt text][logo]
 
-[logo]: https://github.com/adnenre/coming-soon/blob/master/img/logo.png "Logo Title Text 2"
+[logo]: https://github.com/adnenre/coming-soon/blob/master/img/l.png "Logo Title Text 2"
 ready coming soon template
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-11.png)
