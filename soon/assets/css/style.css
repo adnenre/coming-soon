@@ -1,0 +1,833 @@
+/** ***************************************
+
+    TABLE OF CONTENTS
+    ---------------------------
+     1. body,html
+     2. Loader
+     3. Colors
+        - color
+        - background-color
+     4. Background 
+        - background template
+        - background image
+     5. filter
+     6. particles-js container
+     7. container
+          - logo
+          - content-heading
+        - middel
+          - Counter
+          - Counter one
+          - Counter two
+          - Counter three
+          - Counter four
+          - Counter animation
+        - subscribe
+        - footer
+     8. Media Queries
+        - Tablets
+        - Mobiles
+
+ *******************************************/
+
+
+
+
+ /*--------------------------------------
+      HTML & body
+    ------------------------------------*/
+    *{
+        padding: 0px;
+        margin:0px;
+        box-sizing: border-box;
+    }
+    body {  
+        font-family: 'Dosis', sans-serif; 
+        display:flex;  //sticky footer for IE 11+
+    }
+    html {
+        position: relative;
+        min-height: 100%;
+    }
+  
+
+
+/* ---------------------------------------------
+                loader
+    ------------------------------------------ */
+    #preloader
+    {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 100%; 
+        height: 100%;
+
+        background: #000;
+        opacity:0.95;
+    }
+    #loader
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        margin: -30px 0 0 -30px;
+        padding: 0;
+    }
+    #loader:before
+    {
+        display: block;
+        width: 60px;
+        height: 60px;
+        content: '';
+        -webkit-animation: loading 1.2s infinite linear;
+        animation: loading 1.2s infinite linear;
+        border-top: 2px solid rgba(255, 255, 255, .1);
+        border-right: 2px solid rgba(255, 255, 255, .1);
+        border-bottom: 2px solid #009688;
+        border-left: 2px solid #009688;
+        border-radius: 50%;
+    }
+    #loader:after {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 80px;
+        height: 80px;
+        content: '';
+        -webkit-animation: loading-r 1.5s infinite linear;
+        animation: loading-r 1.5s infinite linear;
+        border-top: 2px solid rgba(255, 255, 255, 0);
+        border-right: 2px solid #E91E63;
+        border-bottom: 3px solid rgba(255, 255, 255, 0);
+        border-left: 2px solid #E91E63;
+        border-radius: 50%;
+    }
+
+    @-webkit-keyframes loading
+    {
+        0%
+        {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes loading
+    {
+        0%
+        {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes loading-r
+    {
+        0%
+        {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+        }
+    }
+
+    @keyframes loading-r
+    {
+        0%
+        {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            -webkit-transform: rotate(-360deg);
+             transform: rotate(-360deg);
+        }
+    }
+
+/*----------------------------------------------
+ color
+    ------------------------------------------*/
+    .white-color{
+        color:white;
+    }
+/*--------------------------------------------
+ background - color
+    ------------------------------------------*/
+    .bg-color-one{
+        background: #159957;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(left, #155799, #159957);
+        background: -o-linear-gradient(left, #155799, #159957);
+        background: linear-gradient(to left, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    
+    .bg-color-two{
+        background:#ff977a;
+        background: -webkit-linear-gradient( #ff977a,#ff6779);
+        background: -o-linear-gradient( #ff977a,#ff6779);
+        background: linear-gradient( #ff977a,#ff6779);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .bg-color-three{
+       background: #FF9800;
+        background: -webkit-linear-gradient( #FF9800,#4CAF50);
+        background: -o-linear-gradient( #FF9800,#4CAF50);
+        background: linear-gradient( #FF9800,#4CAF50);
+    }  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .bg-color-four{
+        background: #c0392b; /* fallback for old browsers */
+        background: -webkit-linear-gradient(left, #c0392b, #8e44ad);
+        background: -o-linear-gradient(left, #c0392b, #8e44ad);
+        background: linear-gradient(to left, #c0392b, #8e44ad); /* Chrome 10-25, Safari 5.1-6 */
+    }
+/* ---------------------------------------------
+  background -template
+--------------------------------------------- */
+    #background-template {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        position: absolute;
+    }
+/* ---------------------------------------------
+ background image
+--------------------------------------------- */
+    div.bg-img> img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        //animation : zoom 100s infinite;
+
+    }
+    @keyframes zoom{
+        0%{ transform:  scale(1); }
+        50%{ transform:     scale(1.5); }
+        100%{ transform:    scale(1); }
+    }
+/* ---------------------------------------------
+ filter
+    ------------------------------------------*/   
+    #filter{
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.50);
+        z-index: 0;
+    }
+/* ------------------------------------------
+ particles-js container 
+    --------------------------------------- */
+    #particles-js{
+      width: 100%;
+      height: 95%;
+      position: absolute;
+      background-color: transparent;
+      background-image: url('');
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+/* ---------------------------------------------
+ container 
+    ------------------------------------------*/
+    .container{
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction:column;
+        flex-direction:column;
+        min-height:100vh;
+    }
+/* ---------------------------------------------
+ logo 
+    ------------------------------------------*/
+    .logo{
+        position:relative;
+    }
+ /* ---------------------------------------------
+ content-heading 
+    ------------------------------------------*/
+    .content-heading {
+    padding-bottom: 25px;
+    }
+/* ---------------------------------------------
+    Middel
+    ---------------------------------------- */
+    .middel {
+       display: -webkit-flex;
+       display:flex;
+       -webkit-flex:1;
+        flex: 1;
+        min-height: 150px;
+    }
+    /* ---------------------------------------------
+    counter
+        ----------------------------------------- */
+    .content-counter{
+        margin:auto;  
+        height:150px; 
+    }
+    #counter,#counter-anim {
+        text-align: center;
+        margin: auto;
+        transition:500ms ease-in-out;
+    }
+    /* ==================================================
+       counter - counter-one 
+        ============================================== */
+    
+    .counter-one {
+        width:600px;
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction:row;
+        flex-direction:row;
+        justify-content: center;
+        transition: 500ms;
+        color:white;
+        flex-direction:row;   
+    }
+    .counter-one > .time-content{
+        border-radius: 50%;
+        //background: rgba(255, 255, 255, 0.32);
+        box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.52);
+        width: 120px;
+        height: 120px;
+        margin:15px;
+        border:solid 2px transparent;
+        position: relative;
+        overflow: hidden;   
+    }
+    .counter-one > .time-content > .content-number{
+        font-size:50px;
+    }
+    /* ==================================================
+       counter - counter-two
+        ============================================== */
+    .counter-two {
+        width:600px;
+        -webkit-flex-direction:row;
+        display:flex;
+        flex-direction:row;
+        border-radius: 18px;
+        overflow: hidden;
+        color:white;
+        box-shadow: 0 0px 0px 8px rgba(255, 255, 255, 0.2);
+        transition: 500ms;
+     }
+    .counter-two > #days{
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction:column-reverse;
+        flex-direction:column-reverse;
+        border-right:solid 1px transparent;
+        flex:1;
+        -webkit-flex:1;
+    }
+    
+    .counter-two > #time{
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction:column;
+        flex-direction:column;
+        -webkit-flex:1;
+        flex:1;
+    }
+    .counter-two > #time > #hours > .time-content-number,
+    .counter-two > #time > #minutes > .time-content-number,
+    .counter-two > #time > #seconds > .time-content-number,
+    .counter-two > #time > #hours > .time-text,
+    .counter-two > #time > #minutes > .time-text,
+    .counter-two > #time > #seconds > .time-text,
+    .counter-two > #days > .days-number,
+    .counter-two > #days > .days-text{
+        -webkit-flex:1;
+        flex:1;
+        margin:0;
+    }
+    .counter-two > #time > #hours,
+    .counter-two > #time > #minutes,
+    .counter-two > #time > #seconds{
+        display:flex;
+        flex-direction:row-reverse;
+        flex:1;
+        min-height:40px;
+        margin:0;
+    }
+     .counter-two > #time > #minutes{
+        border-top:solid 1px transparent;
+        border-bottom:solid 1px transparent;
+    }
+    .counter-two > #time > #hours > .time-content-number,
+    .counter-two > #time > #minutes > .time-content-number,
+    .counter-two > #time > #seconds > .time-content-number,
+    .counter-two > #days > .days-number{
+    
+      background:rgba(255,255,255,0.48);
+    }
+    .counter-two > #time > #hours > .time-text,
+    .counter-two > #time > #minutes > .time-text,
+    .counter-two > #time > #seconds > .time-text,
+    .counter-two > #days > .days-text{
+      background:rgba(255,255,255,0.25);
+    }
+    .counter-two > #time > #hours > .time-content-number,
+    .counter-two > #time > #minutes > .time-content-number,
+    .counter-two > #time > #seconds > .time-content-number,
+    .counter-two > #time > #hours > .time-text,
+    .counter-two > #time > #minutes > .time-text,
+    .counter-two > #time > #seconds > .time-text{
+        -webkit-flex:1;
+        flex:1;
+        font-size:15px;
+        padding:10px;
+    }
+    .counter-two > #days > .days-text,
+    .counter-two > #days > .days-number{
+        font-size: 30px;
+        padding:8px;
+
+    }
+
+
+    /* ==================================================
+       counter - counter-three
+        ============================================== */
+    .counter-three {
+        width:600px;
+        display:flex;
+        flex-direction:column;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 0px 0px 8px rgba(255, 255, 255, 0.2);
+        color:white;
+    }
+    .counter-three > #days{
+        display:inline-flex;
+        border-bottom:solid 1px transparent;
+        flex-direction: row-reverse;
+    }
+    .counter-three > #time{
+        display: inline-flex;
+        flex-direction:row;
+        display: -webkit-inline-flex;
+        -webkit-flex-direction:row;
+    }
+    .counter-three > #time > .time-content{
+        flex:1;
+        -webkit-flex:1;
+        display:flex;
+        display:-webkit-flex;
+        flex-direction:column;
+        -webkit-flex-direction:column;
+    }
+    .counter-three > #days > .days ,
+    .counter-three > #days > .days-text{
+        flex:1;
+        -webkit-flex:1;
+        font-size:40px;
+    }
+    .counter-three > #days > .days-text,
+    .counter-three > #time > .time-content > .time-text
+    {
+        line-height: 30px;
+        background:rgba(255,255,255, 0.25);
+    }
+    .counter-three > #days > .days-number,
+    .counter-three > #time > .time-content > .time-content-number
+    {
+        background:rgba(255,255,255, 0.48);
+    }
+    .counter-three > #time > #minutes
+    {
+        border-left:solid 1px transparent;
+        border-right:solid 1px transparent;
+    }
+    .counter-three > #time > .time-content > .time-content-number,
+    .counter-three > #days > .days-number,
+    .counter-three > #days > .days-text{
+        padding:10px;
+        margin: 0;
+    }
+    /* ==================================================
+    counter-four
+        =============================================== */
+    .counter-four
+    {
+        width:600px;
+        display: -webkit-flex;
+        display:flex;
+        -webkit-flex-direction:row;
+        flex-direction:row;
+        justify-content: center;
+        transition: 500ms;
+        color:white;
+        flex-direction:row;   
+    }
+    .counter-four > .time-content {
+        background: rgba(197, 192, 192, 0.3);
+        box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.52);
+        width: 120px;
+        height: 120px;
+        margin:15px;
+        border:solid 2px transparent;
+        position: relative;
+        overflow: hidden;
+    }
+    .counter-four > .time-content > .content-number{
+        font-size:50px;
+    }
+
+    /*==========================================
+        counter animation (counter one & four )
+        =======================================*/
+    .anim{
+
+        position: absolute;
+        left: -50%;
+        background: radial-gradient(transparent 56%,rgb(255, 255, 255));
+        display:block;
+        overflow: hidden;
+        animation :rotate 7s infinite linear;
+    }
+     /*================just for counter one =======================*/
+    
+    .anim-2{
+        position: absolute;
+        left: -50%;
+        background: radial-gradient(transparent,rgba(221, 223, 236, 0.51));
+        display:block;
+        animation :rotate 10s infinite linear;
+    }
+    
+    
+    @keyframes rotate{
+        0%{transform:rotate(360deg);}
+        100%{transform:rotate(0deg);}
+    }   
+    @-webkit-keyframes rotate{
+        0%{transform:rotate(360deg);}
+        100%{transform:rotate(0deg);}
+    }   
+
+/* ---------------------------------------------
+subscribe
+    ----------------------------------------- */
+    .subscribe-container{
+        -webkit-perspective: 800px;
+        -moz-perspective: 800px;
+        -o-perspective: 800px;
+        perspective: 800px;
+        margin:auto;
+        width:400px;
+        height:150px;
+    }
+    .subscribe-content{
+        position:relative;
+    }
+    .subscribe {
+        flex-direction: column;
+        margin:0 auto;
+        border-radius: 30px;
+        -ms-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        box-shadow: 0 0px 23px 8px rgba(251, 251, 251, 0.07);
+        border: solid 2px transparent;
+        padding:9px;
+        z-index: 2;
+    }
+    
+    .subscribe, .back{
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+        width:400px;
+        height:130px;
+        -webkit-transition: 1.5s ease-in-out;
+        -moz-transition: 1.5s ease-in-out;
+        -ms-transition: 1.5s ease-in-out;
+        -o-transition: 1.5s ease-in-out;
+        transition: 1.5s ease-in-out;
+    
+    }
+    .subscribe-content .subscribe{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transform: perspective(800px) rotateY(0deg);
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    }
+    .subscribe-content .back{
+            -moz-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-transform: perspective(800px) rotateY(180deg);
+        -webkit-transform: perspective(800px) rotateY(180deg);
+        transform: perspective(800px) rotateY(180deg);
+        
+    }
+       
+     
+     .rotate-container .subscribe {
+        -moz-transform: perspective(800px) rotateY(180deg);
+        -webkit-transform: perspective(800px) rotateY(180deg);
+        transform: perspective(800px) rotateY(180deg);
+        backface-visibility: hidden;
+    }
+   
+    .rotate-container .back{
+        -webkit-transform: perspective(800px) rotateY(360deg);
+        -moz-transform: perspective(800px) rotateY(360deg);
+        transform: perspective(800px) rotateY(360deg);
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 25px;
+        box-shadow: 0 0px 0px 8px rgba(251, 251, 251, 0.17);
+
+    }
+    .mail-success {
+       background: #4CAF50;
+       color:white;
+       margin:20px;
+       padding:10px;
+       border-radius:50%;
+      
+    }
+    .mail-error {
+       position: relative;
+       top: -15px;
+       background: transparent;
+       color:rgb(244, 67, 54);
+       margin:20px;
+       padding:10px;
+       border-radius:50%;
+    }
+    .mail-status-none{
+        display:none;
+    }
+    
+    .subscribe-content {
+        margin: 25px 0px;
+
+    }
+    .subscribe-heading{
+        text-align: center;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.19);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;   
+    }
+    #subscribe_form{
+         display: flex;
+         margin-top:16px;
+    }
+    #subscribe_btn{
+        flex:1;
+        -webkit-flex:1;
+        border:none;
+        outline:none;
+        margin: auto;
+        width: 150px;
+        padding: 8px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:20px;
+        position:relative;
+        cursor:pointer;
+        transition:300ms;
+        background: rgba(255, 255, 255, 0.59);
+        box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.44);
+    }
+    #subscribe_btn::after{
+        content: "";
+        display: block;
+        width: 0%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:20px;
+        height: 100%;
+        transition:300ms;
+    }
+    #subscribe_btn:hover{
+        
+        background:transparent;
+    }
+    #subscribe_btn:hover::after{
+        width:100%;
+        background:rgba(0, 0, 0, 0.38);
+    }
+    #input_email{
+        flex:1;
+        -webkit-flex:1;
+        padding-left:10px;
+        margin-right:16px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius:20px;
+        outline:none;
+        width:180px;
+        background: transparent;
+        border: none;
+        box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.44);
+        transition: 300ms;
+    }
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:  white;
+        font-family: 'Dosis', sans-serif;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: white;
+        opacity:  1;
+        font-family: 'Dosis', sans-serif;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:  white;
+        opacity:  1;
+        font-family: 'Dosis', sans-serif;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+        font-family: 'Dosis', sans-serif;
+    }
+    .notify_txt  {
+        font-size: 15px;
+    }
+
+
+/* ---------------------------------------------
+ footer - social links
+    --------------------------------------------- */
+    .social_links{
+        overflow:hidden;
+    }
+    .social_links > li {
+        display: inline-block;
+        padding-right: 2px;
+        padding-left: 2px;
+    } 
+    .links_design{
+        background: rgba(255, 255, 255, 0.22);
+        padding: 8px;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        transition:500ms;
+    }
+    .links_design:hover{
+        transform:rotate(360deg) scale(1.3);
+        background:transparent  ;
+    }
+
+/* ==================================================
+   Media Queries - Tablets
+   ============================================== */
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        .counter-one,.counter-two,.counter-three,.counter-four {
+            width:90%;
+        }
+    }
+
+    @media screen and (max-width:767px ){
+
+        .counter-one,.counter-two,.counter-three,.counter-four{
+            width:90%;
+        }
+        .counter-one > .time-content,
+        .counter-four > .time-content{
+            width: 100px;
+            min-width: 100px;
+            height: 100px;
+            margin-left: 10px;
+        }
+        .counter-one > .time-content > .content-number, 
+        .counter-four > .time-content > .content-number{
+            font-size:40px;
+        }
+        .counter-one > .time-content > .time-text,
+        .counter-four > .time-content >  .time-text{
+            font-size:10px;
+        }
+    }
+    /* ==================================================
+       Responsive Media Queries - Mobiles
+    ================================================== */
+
+    @media screen and (max-width: 480px){
+        .counter-one,.counter-two,.counter-three,.counter-four {
+            width:80%;
+        }
+        .counter-one > .time-content,
+        .counter-four > .time-content{
+            width: 60px;
+            min-width: 60px;
+            height: 60px;
+            margin: 6px;
+            box-shadow: 0 0 2px 3px rgba(255, 255, 255, 0.25);       
+        }
+        .counter-one > .time-content > .content-number,
+        .counter-four > .time-content > .content-number{
+            font-size:20px;
+            margin:8px 0 0 ;
+        }
+        .counter-four > .time-content > .time-text,
+        .counter-one > .time-content >  .time-text{
+            font-size:10px;
+        }
+        .counter-three > #days > .days-number,
+        .counter-three > #days > .days-text,
+        .counter-two > #days > .days-text{
+            font-size:30px;
+        }
+        .counter-three > #time > .time-content > .time-content-number, 
+        .counter-two > #time > .time-content > .time-content-number ,
+        .counter-two > #time > .time-content > .time-text{
+            font-size:20px;
+            flex:none;
+            min-width: 55px;
+        }
+        .subscribe-container ,.subscribe,.back{
+            width:100%;
+        }
+        .subscribe,.back {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        #subscribe_btn {
+            width: 25% !important;
+        }       
+    }
