@@ -40,8 +40,8 @@ License
 -------------
 <a href=/LICENSE.txt target="_blank">MIT</a> license.
 
-### From akveo
+### From Adnenre
 
 Enjoy!
-We're always happy to hear your feedback.
+Always happy to hear your feedback.
 
