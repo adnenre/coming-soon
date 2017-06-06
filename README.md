@@ -16,7 +16,9 @@
 * Particles
 * cross browser(Chrome,firefox,internet explorer 10+)
 * etc
+
 [demo](http://www.novisdev.com/soon-demo/)
+
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-11.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-22.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-33.png)
