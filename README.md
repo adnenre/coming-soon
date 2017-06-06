@@ -30,7 +30,10 @@
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-3.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-4.png)
 
-
+## How can I support developers?
+- Star my GitHub repo
+- Create pull requests, submit bugs, suggest new features or documentation updates
+- Follow me on [Twitter](https://twitter.com/adnen_rebai)
 
 License
 -------------
