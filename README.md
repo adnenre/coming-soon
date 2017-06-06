@@ -2,14 +2,20 @@
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/l.png)
 
-Ready coming soon template
-- Gradient background
-- Image background
-- Slideshow background
-- Responsive
-- Particle
-- cross browser(Chrome,firefox,internet explorer 10+)
-
+## Ready coming soon template
+[demo](http://www.novisdev.com/soon-demo/)
+## Features
+* Responsive layout
+* High resolution
+* Bootstrap CSS Framework
+* Sass
+* Mailchimp
+* Background gradient
+* Background image
+* Background slideshow
+* Particles
+* cross browser(Chrome,firefox,internet explorer 10+)
+* etc
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-11.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-22.png)
@@ -24,17 +30,7 @@ Ready coming soon template
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-3.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-4.png)
 
-[demo](http://www.novisdev.com/soon-demo/)
-## Features
-* Responsive layout
-* High resolution
-* Bootstrap CSS Framework
-* Sass
-* Mailchimp
-* Background gradient
-* Background image
-* Background slideshow
-* etc
+
 
 License
 -------------
