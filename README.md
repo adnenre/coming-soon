@@ -8,12 +8,12 @@
 * Responsive layout
 * High resolution
 * Bootstrap CSS Framework
-* Sass
-* Mailchimp
+* Mailchimp subscribe
 * Background gradient
 * Background image
 * Background slideshow
 * Particles
+* jquery
 * cross browser(Chrome,firefox,internet explorer 10+)
 * etc
 
