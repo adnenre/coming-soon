@@ -25,5 +25,23 @@ Ready coming soon template
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-4.png)
 
 [demo](http://www.novisdev.com/soon-demo/)
+## Features
+* Responsive layout
+* High resolution
+* Bootstrap CSS Framework
+* Sass
+* Mailchimp
+* Background gradient
+* Background image
+* Background slideshow
+* etc
 
+License
+-------------
+<a href=/LICENSE.txt target="_blank">MIT</a> license.
+
+### From akveo
+
+Enjoy!
+We're always happy to hear your feedback.
 
