@@ -213,12 +213,16 @@
 /* ---------------------------------------------
  background image
 --------------------------------------------- */
-    div.bg-img> img {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        //animation : zoom 100s infinite;
+    div.bg-img {
+        position: relative;
+        overflow: hidden;
+    }
 
+    div.bg-img> img {
+		width: 100%;
+		height: 100%; 
+		object-fit: cover;
+        //animation : zoom 100s infinite;
     }
     @keyframes zoom{
         0%{ transform:  scale(1); }
