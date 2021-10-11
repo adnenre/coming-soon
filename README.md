@@ -1,3 +1,9 @@
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
 # coming-soon
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/l.png)
