@@ -1,0 +1,162 @@
+/* ----------------------------------------------------
+  
+    File Name: style.css
+    Template Name: Soon under construction
+    Created By: rebai adnen
+    
+
+    
+    
+
+/* ----------------------------------------------------
+    IMPORT  
+------------------------------------------------------- */
+
+
+
+.doc-title {
+    padding: 50px;
+}
+
+
+
+.bg-dark{
+	 background-color: #212429;
+}
+.dark-text  a {
+    float: right;
+    background: #464646;
+    padding: 5px;
+    border-radius: 7px;
+    color: white;
+    font-size: 10px;
+    margin: 5px;
+}
+.dark-text hr{
+	width: 130px;
+    margin-left: 0;
+    margin-top: 40px;
+    border-width: 1px;
+    border-color: #030303;
+}
+    
+/* sidebar */
+
+.sidebar {
+   
+    padding-left: 0;
+    padding-right: 0;
+    width: 280px;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+.sidebar-header {
+    margin-bottom: 75px;
+    color:#777777;
+}
+.doc-list{
+ text-transform: uppercase;
+}
+.doc-list > a{
+ display:block;
+ padding:5px 10px;
+ color: #777777;
+ transition:300ms;
+ text-decoration: none;
+}
+.doc-list > a:hover{
+	background:#151515;
+}
+
+.main{
+	padding-left:280px;
+	padding-top:80px;
+}
+
+/* tree file */
+.tree {
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#fbfbfb;
+   
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative
+}
+.tree li::before, .tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left:1px solid #999;
+    bottom:50px;
+    height:100%;
+    top:-4px;
+    width:1px
+}
+.tree li::after {
+    border-top:1px solid #999;
+    height:20px;
+    top:25px;
+    width:25px
+}
+.tree li span {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:1px solid #999;
+    border-radius:5px;
+    display:inline-block;
+    padding:3px 8px;
+    text-decoration:none;
+    overflow:hidden;
+}
+.tree li.parent_li>span {
+    cursor:pointer
+}
+.tree>ul>li::before, .tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:30px
+}
+.tree li.parent_li>span:hover {
+    background:#eee;
+    border:1px solid #94a0b4;
+    color:#000
+}
+
+
+/* file & source */
+.included-file-title {
+    padding: 15px;
+    height: 80px;
+}
+
+@media screen and (max-width:700px){
+
+	.sidebar{
+		display:block;
+		position:relative;
+		width:100%;
+		text-align:center;
+	}
+	.main{
+		padding-left:0;
+	}
+}
