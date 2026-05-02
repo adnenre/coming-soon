@@ -24,7 +24,7 @@ var background = {
   },
 
   image: {
-    image_url: "https://images.pexels.com/photos/30732/pexels-photo-30732.jpg?w=940&h=650&auto=compress&cs=tinysrgb",
+    image_url: "../img/img-4.webp",
   },
 
   particule: false,
