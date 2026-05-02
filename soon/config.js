@@ -1,112 +1,67 @@
-'use strict';
+"use strict";
 
+var background = {
+  //  CHOOSE ON OF THIS OPTION
+  // OPTION : 'gradient' , 'image' , 'slideShow'
 
+  type: "gradient",
 
-var background ={
+  //OPTION :'bg-color-one','bg-color-two','bg-color-three','bg-color-four'
 
-       //  CHOOSE ON OF THIS OPTION      
-       // OPTION : 'gradient' , 'image' , 'slideShow' 
+  gradient: "bg-color-one",
 
-       type   : 'gradient',
+  slideShow: {
+    slides: [
+      { src: "../img/img-1.webp" },
+      { src: "../img/img-2.webp" },
+      { src: "../img/img-3.webp" },
+      { src: "../img/img-4.webp" },
+      { src: "../img/img-5.webp" },
+      { src: "../img/img-6.webp" },
+    ],
 
+    overlay: "assets/css/overlays/06.png",
+  },
 
+  image: {
+    // choose image for background
+    image_url: "",
+  },
 
-       //OPTION :'bg-color-one','bg-color-two','bg-color-three','bg-color-four'
-      
-       gradient  : 'bg-color-one',
-
-
-       slideShow : { 
-
-             slides :
-
-                    [
-                      { src: 'https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                      { src: 'https://images.pexels.com/photos/147504/pexels-photo-147504.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                      { src: 'https://images.pexels.com/photos/196666/pexels-photo-196666.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                      { src: 'https://images.pexels.com/photos/196464/pexels-photo-196464.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                      { src: 'https://images.pexels.com/photos/71104/utah-mountain-biking-bike-biking-71104.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' },
-                      { src: 'https://images.pexels.com/photos/69731/pexels-photo-69731.jpeg?w=940&h=650&auto=compress&cs=tinysrgb' }
-
-                    ],
-
-                    overlay:'assets/css/overlays/06.png'
-
-                 },
-
-       image : {
-           
-           // choose image for background
-          image_url : ""
-
-        },
-       
-       //Option : ture ,false "activate or deactivate particle"
-       particle : true
-
-      } ;
-
-
-
+  //Option : ture ,false "activate or deactivate particle"
+  particle: true,
+};
 
 /**************************
- **		countDwon      **   
+ **		countDwon      **
  **************************/
 
 var counter = {
-        
+  // "counter-one", "counter-two","counter-three","counter-four"
 
-        // "counter-one", "counter-two","counter-three","counter-four"
+  style: "counter-four",
 
-		style : 'counter-four',
+  launchDate: {
+    // OPTIONS:"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 
-    launchDate : {
+    Month: "January",
 
+    //  DAY : INTEGER[ 1 - 31 ]
 
-          // OPTIONS:"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
-          
-          Month: 'January',
+    Day: 17,
 
+    // YEAR : INTEGER
 
-          //  DAY : INTEGER[ 1 - 31 ]
-
-          Day: 17,
-
-
-           // YEAR : INTEGER
-
-          Year: 2020
-    }
-		
-	};
+    Year: 2027,
+  },
+};
 
 /**************************
- **		Ajax Chimp       **   
+ **		Ajax Chimp       **
  **************************/
 
 $("#subscribe_form").ajaxChimp({
+  // Replace your mailchimp post url inside double quote "".
 
-
-	// Replace your mailchimp post url inside double quote "".
-    
-    url: "//novisdev.us15.list-manage.com/subscribe/post?u=202b79afea96f1d57561896f5&amp;id=02ba748be1"    
- 
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  url: "//novisdev.us15.list-manage.com/subscribe/post?u=202b79afea96f1d57561896f5&amp;id=02ba748be1",
+});
