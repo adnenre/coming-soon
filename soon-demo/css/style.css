@@ -1,0 +1,246 @@
+/* ---------------------------------------------
+                pre-loader
+--------------------------------------------- */
+body,html{
+    height:100%;
+   
+}
+#preloader
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%; 
+    height: 100%;
+
+    background: #000;
+    opacity:0.95;
+}
+
+
+
+#loader
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    padding: 0;
+}
+#loader:before
+{
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: '';
+    -webkit-animation: loading 1.2s infinite linear;
+    animation: loading 1.2s infinite linear;
+    border-top: 2px solid rgba(255, 255, 255, .1);
+    border-right: 2px solid rgba(255, 255, 255, .1);
+    border-bottom: 2px solid #009688;
+    border-left: 2px solid #009688;
+    border-radius: 50%;
+}
+#loader:after {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 80px;
+    height: 80px;
+    content: '';
+    -webkit-animation: loading-r 1.5s infinite linear;
+    animation: loading-r 1.5s infinite linear;
+    border-top: 2px solid rgba(255, 255, 255, 0);
+    border-right: 2px solid #E91E63;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+    border-left: 2px solid #E91E63;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes loading
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+
+@keyframes loading
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes loading-r
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+
+@keyframes loading-r
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(-360deg);
+                transform: rotate(-360deg);
+    }
+}
+
+/****** head section *******/
+#head-soon {
+    
+    position: relative;
+    padding: 0;
+    background: url(../img/bg-img.jpg) no-repeat center bottom;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.flex-container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    display:-webkit-flex;
+}
+.child-flex{
+   padding: 5%;
+    margin: auto;
+    border-radius: 11px;
+    background: rgba(0, 0, 0, 0.32);
+    border: solid 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 15px 8px rgba(3, 169, 244, 0.16);
+}
+/****logo*****/
+.logo {
+    width: 200px;
+    margin: auto;
+}
+path#XMLID_15_ {
+    fill: white;
+}
+g#XMLID_1_ {
+    fill: white;
+}
+.logo-msg{
+	margin:25px;
+	text-transform:uppercase;	
+}
+.heading-title{
+    color: #222;
+    display: inline-block;
+    border: 2px solid #eee;
+    padding: 25px;
+}
+
+/* content section*/
+h3.counter-style-text {
+  
+    font-size: 15px;
+    border: 2px solid #eee;
+    color: #222;
+    padding: 10px;
+}
+.container-demo-img {
+   
+}
+hr.sep{
+    width: 100%;
+    height: 3px;
+    border-color: white;
+    opacity: 0.5;
+    background:#eee;
+}
+
+.demo-img{
+	box-shadow: -1px 3px 16px rgba(0, 0, 0, 0.66);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+	margin:10px;
+    position:relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.demo-img:hover {
+    box-shadow: -1px 3px 16px rgba(0, 0, 0, 0.33);
+    text-decoration: none;
+    
+}
+.demo-img::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    width: 0;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.15);
+    transition: 500ms;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius:50%;
+    
+}
+.demo-img:hover::after{
+    width:150%;
+
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+/*section feature*/
+section.features{
+    background:#ececec;
+    padding:10px 0;
+}
+
+.soon-feature{
+    margin: 9px 0;
+    padding-top: 9px;
+    border-bottom: 1px solid #3b57a1;
+}
+i.soon-feature-icon {
+    color: #3b57a1;
+}
+/******* footer***********/
+footer{
+    background-color:#222;
+    padding:5px;
+}
+.text-gray{
+    color:#aaa;
+}
