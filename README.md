@@ -1,5 +1,3 @@
-
-
 # coming-soon
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/l.png)
@@ -7,19 +5,20 @@
 ## Ready coming soon template
 
 ## Features
-* Responsive layout
-* High resolution
-* Bootstrap CSS Framework
-* Mailchimp subscribe
-* Background gradient
-* Background image
-* Background slideshow
-* Particles
-* jquery
-* cross browser(Chrome,firefox,internet explorer 10+)
-* etc
 
-[demo](https://adnenre.github.io/soon-demo)
+- Responsive layout
+- High resolution
+- Bootstrap CSS Framework
+- Mailchimp subscribe
+- Background gradient
+- Background image
+- Background slideshow
+- Particles
+- jquery
+- cross browser(Chrome,firefox,internet explorer 10+)
+- etc
+
+[demo](https://adnenre.github.io/coming-soon/)
 
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-4.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img1-11.png)
@@ -34,18 +33,17 @@
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-2.png)
 ![alt text](https://github.com/adnenre/coming-soon/blob/master/img/img3-3.png)
 
-
 ## How can I support developers?
+
 - Star my GitHub repo
 - Create pull requests, submit bugs, suggest new features or documentation updates
 - Follow me on [Twitter](https://twitter.com/adnen_rebai)
 
-License
--------------
+## License
+
 <a href=/LICENSE.txt target="_blank">MIT</a> license.
 
-### From Adnenre
+## Author
 
-Enjoy!
-Always happy to hear your feedback.
-
+- github: https://github.com/adnenre
+- website: https://adnenre.dev
